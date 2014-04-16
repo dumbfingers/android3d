@@ -52,22 +52,25 @@ color("lightgreen") {
 				}
 		}
 	}
-}
 
-// legs
-translate([0, -3.5, -4]) {
-	cylinder(h=4, r=1.5, $fn=100);
-	translate([0, 0, -0.1]) {
-		sphere(r=1.5, $fn=100);
-	}
-}
-
-mirror([0, 1, 0]) {
+	// legs
 	translate([0, -3.5, -4]) {
 		cylinder(h=4, r=1.5, $fn=100);
 		translate([0, 0, -0.1]) {
 			sphere(r=1.5, $fn=100);
 		}
 	}
+	
+	mirror([0, 1, 0]) {
+		translate([0, -3.5, -4]) {
+			cylinder(h=4, r=1.5, $fn=100);
+			translate([0, 0, -0.1]) {
+				sphere(r=1.5, $fn=100);
+			}
+		}
+	}
+
 }
+
+
 
